@@ -6,8 +6,16 @@ const AddTaskForm = (props) => {
 
   return (
     <form className="todo__form">
-      <Field />
-      <Button />
+      <Field
+        className="todo__field"
+        label="New task title"
+        id="new-task"
+      />
+      <Button
+        type="submit"
+      >
+        Add
+      </Button>
     </form>
   )
 }
