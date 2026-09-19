@@ -3,6 +3,7 @@ const Button = (props) => {
     className = '',
     type = 'button',
     onClick,
+    isDisabled,
     children,
   } = props
 
@@ -10,6 +11,7 @@ const Button = (props) => {
     <button
       className={`button ${className}`}
       type={type}
+      disabled={isDisabled}
       onClick={onClick}
     >
       {children}
