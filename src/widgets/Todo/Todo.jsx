@@ -8,7 +8,7 @@ import { TasksContext } from '@/entities/todo'
 import styles from './Todo.module.scss'
 
 const Todo = () => {
-  const firstIncompleteTaskRef = useContext(TasksContext)
+  const { firstIncompleteTaskRef } = useContext(TasksContext)
 
   return (
     <div className={styles.todo}>
